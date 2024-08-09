@@ -1,0 +1,105 @@
+<html>
+
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Timetable</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    .time-column {
+        font-weight: bold;
+    }
+    .staff-name-input {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+</style>
+</head>
+<body>
+    <h2>Weekly Timetable</h2>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>8:00 - 9:00</th>
+                <th>9:00 - 9:50</th>
+                <th>9:50 - 10:10</th>
+                <th>10:10 - 11:50</th>
+                <th>11:50 - 12:30</th>
+                <th>12:30 - 1:20</th>
+                <th>1:20 - 2:10</th>
+                <th>2:10 - 3:00</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="time-column">Tuesday</td>
+                <td><input type="text" class="Sabitha" placeholder="CN"></td>
+                <td><input type="text" class="staff-name-input" placeholder="IP"></td>
+                <td>Break</td>
+                <td colspan="2"><input type="text" class="staff-name-input" placeholder="IP/CN LAB"></td> <!-- Combined for Tuesday -->
+                <td>Lunch</td>
+                <td><input type="text" class="staff-name-input" placeholder="LIB"></td>
+                <td colspan="2"><input type="text" class="staff-name-input" placeholder="POAI/IP LAB"></td> <!-- Combined for Tuesday -->
+            </tr>
+            <tr>
+                <td class="time-column">Wednesday</td>
+                <td colspan="2"><input type="text" class="staff-name-input" placeholder="TOC"></td> <!-- Combined for Wednesday -->
+                <td>Break</td>
+                <td colspan="2"><input type="text" class="staff-name-input" placeholder="CN/IP LAB"></td> <!-- Combined for Wednesday -->
+                <td>Lunch</td>
+                <td><input type="text" class="staff-name-input" placeholder="LIB"></td>
+                <td><input type="text" class="staff-name-input" placeholder="CN"></td>
+  <td><input type="text" class="staff-name-input" placeholder="NPTEL"></td>
+            </tr>
+            <tr>
+                <td class="time-column">Thursday</td>
+                <td colspan="2"><input type="text" class="staff-name-input" placeholder="RPA"></td> <!-- Combined for Thursday -->
+                <td>Break</td>
+                <td><input type="text" class="staff-name-input" placeholder="IP"></td>
+                <td><input type="text" class="staff-name-input" placeholder="CN"></td>
+                <td>Lunch</td>
+                <td><input type="text" class="staff-name-input" placeholder="COUN"></td>
+                <td><input type="text" class="staff-name-input" placeholder="CN"></td>
+                <td><input type="text" class="staff-name-input" placeholder="POAI"></td>
+            </tr>
+            <tr>
+                <td class="time-column">Friday</td>
+                <td colspan="2"><input type="text" class="staff-name-input" placeholder="IP/CN LAB"></td> <!-- Combined for Friday -->
+                <td>Break</td>
+                <td><input type="text" class="staff-name-input" placeholder="POAI"></td>
+                <td><input type="text" class="staff-name-input" placeholder="TOC"></td>
+                <td>Lunch</td>
+                <td><input type="text" class="staff-name-input" placeholder="IP"></td>
+               
+                <td colspan="2"><input type="text" class="staff-name-input" placeholder="RPA"></td> <!-- Combined for Friday -->
+            </tr>
+            <tr>
+                <td class="time-column">Saturday</td>
+                               <td><input type="text" class="staff-name-input" placeholder="POAI"></td>
+                <td><input type="text" class="staff-name-input" placeholder="TOC"></td>
+                <td>Break</td>
+  <td colspan="2"><input type="text" class="staff-name-input" placeholder="POAI LAB"></td> <!-- Combined for Friday -->
+
+                <td>Lunch</td>
+                <td><input type="text" class="staff-name-input" placeholder="IP"></td>
+                <td colspan="2"><input type="text" class="staff-name-input" placeholder="VAP"></td> <!-- Combined for Saturday -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
